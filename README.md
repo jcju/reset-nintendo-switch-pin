@@ -23,6 +23,10 @@ Build and run *resetPIN.c* on Putty/NxSh or any other Shell tool.
 
 
 
+If your NS not under CFW, you have to use key generator: https://github.com/dazjo/mkey
+
+
+
 ## Reference
 
 Switchbrew CFW API:  [pctlauthRegisterPasscode()](https://switchbrew.github.io/libnx/pctlauth_8h.html#ab9fad9a58c8f98e494ba59d57a0e6c3c)
