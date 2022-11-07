@@ -5,11 +5,15 @@
 
 
 
-A good rescue when your Parent Control PIN is exposed to kids, especially when your PIN is set via mobile APP.
+A good rescue when your Parent Control PIN is exposed.
 
 
 
-This tool simply reset/change the Parent Control PIN locally, without any Internet connection or pairing to Nintendo's mobile APP again.
+If your PIN was set via mobile APP, Nintendo requires you to connect to mobile APP to change the PIN, regardless of your NS need to be isolated from Internet.
+
+
+
+This tool simply reset/change the Parent Control PIN locally, without any Internet connection.
 
 
 
@@ -19,6 +23,6 @@ Build and run *resetPIN.c* on Putty/NxSh or any other Shell tool.
 
 
 
-## Ref
+## Reference
 
 Switchbrew CFW API:  [pctlauthRegisterPasscode()](https://switchbrew.github.io/libnx/pctlauth_8h.html#ab9fad9a58c8f98e494ba59d57a0e6c3c)
