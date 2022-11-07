@@ -10,22 +10,25 @@ int main(int argc, char *argv[])
 
     printf("Jumping to reset Parental Control PIN ... \n\n");
     consoleUpdate(NULL);
-    
     sleep(1000);
-
-    pctlExit();
 
     if (!pctlauthRegisterPasscode())
     {
-        printf("Failed to change passcode.\n\n");
+        printf("Failed to change PIN. \n\n");
         consoleUpdate(NULL);
     }
-            
-    printf("Parental Control PIN is succesfully reset! \n\n");
+    else
+    {    
+        printf("Succesfully changed PIN! \n\n");
+        consoleUpdate(NULL);
+    }  
+
+    printf("Press any key to exit ... \n\n");
     consoleUpdate(NULL);
-            
+
+    hidScanInput();
+    
     pctlInitialize();
-        
     consoleExit(NULL);
     pctlExit();
 
